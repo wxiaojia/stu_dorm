@@ -1,0 +1,47 @@
+body{
+	margin:0;
+	padding:0;
+	font-family: "ËÎÌו";
+}
+.box{
+	width:330px;
+	margin:0 auto;
+	margin-top: 120px;
+}
+#top{
+	font-size:35px;
+	margin:20px auto;
+	text-align:center;
+}
+#num,#name,#pwd,#right{
+	width:330px;
+	height:34px;
+}
+#num label,#name label,#pwd label,#right label{
+	float:left;
+	font-size:25px;
+}
+.form-control{
+	font-size:15px;
+	width:228px;
+}
+#submit{
+	margin: 33px auto;
+    text-align: center;
+}
+option{
+	font-size: 15px;
+}
+select{
+	font-size:15px;
+	width:228px;
+}
+a{
+	float: right;
+	font-size: 10px;
+	text-decoration: none; 
+}
+a:hover{
+	color: red;
+	text-decoration: none; 
+}

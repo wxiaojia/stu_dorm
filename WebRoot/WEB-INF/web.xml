@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0"
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+      <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <!--登录  -->
+  <servlet>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>servlet.Login</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  <!-- 注册 -->
+   <servlet>
+    <servlet-name>Add</servlet-name>
+    <servlet-class>servlet.Add</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Add</servlet-name>
+    <url-pattern>/add</url-pattern>
+  </servlet-mapping>
+  <!--显示宿舍楼-->
+   <servlet>
+    <servlet-name>show_floor</servlet-name>
+    <servlet-class>floor_servlet.show_floor</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>show_floor</servlet-name>
+    <url-pattern>/show_floor</url-pattern>
+  </servlet-mapping>
+  <!-- 删除宿舍楼信息 -->
+  <servlet>
+    <servlet-name>delete_floor</servlet-name>
+    <servlet-class>floor_servlet.delete_floor</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>delete_floor</servlet-name>
+    <url-pattern>/delete_floor</url-pattern>
+  </servlet-mapping>
+  <!-- 显示要修改宿舍楼信息 -->
+   <servlet>
+    <servlet-name>alter_floor</servlet-name>
+    <servlet-class>floor_servlet.alter_floor</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>alter_floor</servlet-name>
+    <url-pattern>/alter_floor</url-pattern>
+  </servlet-mapping>
+  <!--修改宿舍楼信息-->
+    <servlet>
+    <servlet-name>alterMesg_floor</servlet-name>
+    <servlet-class>floor_servlet.alterMesg_floor</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>alterMesg_floor</servlet-name>
+    <url-pattern>/alterMesg_floor</url-pattern>
+  </servlet-mapping>
+  <!-- 添加楼栋-->
+  <servlet>
+    <servlet-name>add_floor</servlet-name>
+    <servlet-class>floor_servlet.add_floor</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>add_floor</servlet-name>
+    <url-pattern>/add_floor</url-pattern>
+  </servlet-mapping>
+  <!--显示房间-->
+    <servlet>
+    <servlet-name>show_room</servlet-name>
+    <servlet-class>room_servlet.show_room</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>show_room</servlet-name>
+    <url-pattern>/show_room</url-pattern>
+  </servlet-mapping>
+  <!-- 要修改的宿舍的信息 -->
+  <servlet>
+    <servlet-name>alter_room</servlet-name>
+    <servlet-class>room_servlet.alter_room</servlet-class>
+  </servlet>
+    <servlet-mapping>
+    <servlet-name>alter_room</servlet-name>
+    <url-pattern>/alter_room</url-pattern>
+  </servlet-mapping>
+  <!-- 修改宿舍信息 -->
+  <servlet>
+    <servlet-name>alterMesg_room</servlet-name>
+    <servlet-class>room_servlet.alterMesg_room</servlet-class>
+  </servlet>
+    <servlet-mapping>
+    <servlet-name>alterMesg_room</servlet-name>
+    <url-pattern>/alterMesg_room</url-pattern>
+  </servlet-mapping>
+  <!-- 删除宿舍 -->
+  <servlet>
+    <servlet-name>delete_room</servlet-name>
+    <servlet-class>room_servlet.delete_room</servlet-class>
+  </servlet>
+    <servlet-mapping>
+    <servlet-name>delete_room</servlet-name>
+    <url-pattern>/delete_room</url-pattern>
+  </servlet-mapping>
+  <!-- 显示学生 -->
+  <servlet>
+    <servlet-name>show_students</servlet-name>
+    <servlet-class>student_servlet.show_students</servlet-class>
+  </servlet>
+    <servlet-mapping>
+    <servlet-name>show_students</servlet-name>
+    <url-pattern>/show_students</url-pattern>
+  </servlet-mapping>
+  <!-- 显示修改的学生信息 -->
+  <servlet>
+    <servlet-name>alter_students</servlet-name>
+    <servlet-class>student_servlet.alter_students</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>alter_students</servlet-name>
+    <url-pattern>/alter_students</url-pattern>
+  </servlet-mapping>
+  <!-- 学生 -->
+  <servlet>
+    <servlet-name>alterMesg_student</servlet-name>
+    <servlet-class>student_servlet.alterMesg_student</servlet-class>
+  </servlet>
+    <servlet-mapping>
+    <servlet-name>alterMesg_student</servlet-name>
+    <url-pattern>/alterMesg_student</url-pattern>
+  </servlet-mapping>
+  <!-- 删除学生 -->
+  <servlet>
+    <servlet-name>delete_students</servlet-name>
+    <servlet-class>student_servlet.delete_students</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>delete_students</servlet-name>
+    <url-pattern>/delete_students</url-pattern>
+  </servlet-mapping>
+  <!-- 添加学生 -->
+  <servlet>
+    <servlet-name>add_student</servlet-name>
+    <servlet-class>student_servlet.add_student</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>add_student</servlet-name>
+    <url-pattern>/add_student</url-pattern>
+  </servlet-mapping>
+  <!-- 查询学生信息 -->
+  <servlet>
+    <servlet-name>find_student</servlet-name>
+    <servlet-class>find.find_student</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>find_student</servlet-name>
+    <url-pattern>/find_student</url-pattern>
+  </servlet-mapping>
+  <!-- 查询楼房信息 -->
+  <servlet>
+    <servlet-name>find_floor</servlet-name>
+    <servlet-class>find.find_floor</servlet-class>
+  </servlet>
+    <servlet-mapping>
+    <servlet-name>find_floor</servlet-name>
+    <url-pattern>/find_floor</url-pattern>
+  </servlet-mapping>
+  <!-- 查询房间信息 -->
+  <servlet>
+    <servlet-name>find_room</servlet-name>
+    <servlet-class>find.find_room</servlet-class>
+  </servlet>
+    <servlet-mapping>
+    <servlet-name>find_room</servlet-name>
+    <url-pattern>/find_room</url-pattern>
+  </servlet-mapping>
+  <!-- 添加房间 -->
+  <servlet>
+    <servlet-name>add_room</servlet-name>
+    <servlet-class>room_servlet.add_room</servlet-class>
+  </servlet>
+    <servlet-mapping>
+    <servlet-name>add_room</servlet-name>
+    <url-pattern>/add_room</url-pattern>
+  </servlet-mapping>
+  <!-- 宿舍成员 -->
+    <servlet>
+    <servlet-name>room_people</servlet-name>
+    <servlet-class>allot_servlet.room_people</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>room_people</servlet-name>
+    <url-pattern>/room_people</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>floor_id</servlet-name>
+    <servlet-class>room_servlet.floor_id</servlet-class>
+  </servlet>
+    <servlet-mapping>
+    <servlet-name>floor_id</servlet-name>
+    <url-pattern>/floor_id</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>show_allroom</servlet-name>
+    <servlet-class>room_servlet.show_allroom</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>delete_roomstu</servlet-name>
+    <servlet-class>allot_servlet.delete_roomstu</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>add_roomstu</servlet-name>
+    <servlet-class>allot_servlet.add_roomstu</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>add_roomid</servlet-name>
+    <servlet-class>allot_servlet.add_roomid</servlet-class>
+  </servlet>
+
+
+
+  <servlet-mapping>
+    <servlet-name>show_allroom</servlet-name>
+    <url-pattern>/show_allroom</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>delete_roomstu</servlet-name>
+    <url-pattern>/delete_roomstu</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>add_roomstu</servlet-name>
+    <url-pattern>/add_roomstu</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>add_roomid</servlet-name>
+    <url-pattern>/add_roomid</url-pattern>
+  </servlet-mapping>
+
+</web-app>
